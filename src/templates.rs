@@ -1,7 +1,7 @@
 use {super::*, boilerplate::Boilerplate};
 
 pub(crate) use {
-  block::{BlockHtml, BlockJson},
+  block::{BlockHtml, BlockJson, BlockInfoJson},
   blocks::{BlocksHtml, BlocksJson},
   children::{ChildrenHtml, ChildrenJson},
   clock::ClockSvg,
@@ -21,6 +21,7 @@ pub(crate) use {
   range::RangeHtml,
   rare::RareTxt,
   rune::{RuneHtml, RuneJson},
+  rune_balances::RuneBalancesHtml,
   runes::{RunesHtml, RunesJson},
   sat::{SatHtml, SatInscriptionJson, SatInscriptionsJson, SatJson},
   server_config::ServerConfig,
@@ -45,6 +46,7 @@ mod preview;
 mod range;
 mod rare;
 pub mod rune;
+pub mod rune_balances;
 pub mod runes;
 pub mod sat;
 pub mod status;
